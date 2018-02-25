@@ -1,0 +1,32 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "documentation for react-nuik",
+  "main": "index.js",
+  "scripts": {
+    "build:deploy": "rm -rf _book && gitbook build && gh-pages -d _book",
+    "deploy": "gh-pages -d _book",
+    "build": "rm -rf _book && gitbook build",
+    "start": "rm -rf _book && gitbook serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niolabs/react-nuik.git"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "nio",
+    "niolabs"
+  ],
+  "author": "niolabs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niolabs/react-nuik/issues"
+  },
+  "homepage": "https://niolabs.github.io/react-nuik",
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}
